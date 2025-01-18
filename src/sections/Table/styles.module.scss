@@ -1,0 +1,71 @@
+.table {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+
+.modal-inner {
+  padding: 12px 8px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+
+  & > *:not(:last-child) {
+    margin: 0 0 16px;
+    font-family: var(--font-geist-sans);
+    font-size: 16px;
+    outline: none;
+
+    &::placeholder {
+      font-family: var(--font-geist-sans);
+    }
+  }
+
+  input,
+  select {
+    height: 45px;
+    padding: 0 8px;
+  }
+
+  textarea {
+    padding: 8px;
+    min-height: 120px;
+    resize: none;
+  }
+
+  button {
+    padding: 8px 12px;
+
+    background-color: var(--accent);
+    cursor: pointer;
+    border: none;
+
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+
+  width: 24px;
+  height: 24px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../../static/icons/close.svg');
+
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.25);
+  }
+}

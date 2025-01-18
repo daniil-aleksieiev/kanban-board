@@ -1,0 +1,17 @@
+.column {
+  height: 100%;
+  padding: 16px 10px;
+  background-color: var(--dark-sheet);
+  border-radius: 8px;
+}
+
+.title {
+  margin: 0 0 16px;
+  padding: 0 0 16px;
+
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+
+  border-bottom: 1px solid var(--light);
+}
